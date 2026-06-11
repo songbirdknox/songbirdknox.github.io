@@ -7,6 +7,12 @@ https://www.tooplate.com/view/2159-mochi-space
 */
 
 :root {
+    --matcha: #D4E09B;
+    --melon: #F6F4D2;
+    --sagefoam: #CBDFBD;
+    --salmon: #F19C79;
+    --salmon-hover: #F2AE79;
+    --rust: #A44A3F;
     --lavender: #E8E0F0;
     --lavender-deep: #D4C8E8;
     --peachy: #FFE5E5;
@@ -59,14 +65,14 @@ h1, h2, h3, .logo {
 .shape {
     position: absolute;
     border-radius: 50%;
-    opacity: 0.5;
+    opacity: 0.4;
     animation: floatShape 20s ease-in-out infinite;
 }
 
 .shape-1 {
     width: 300px;
     height: 300px;
-    background: var(--lavender);
+    background: var(--matcha);
     top: 10%;
     left: -5%;
     animation-delay: 0s;
@@ -75,7 +81,7 @@ h1, h2, h3, .logo {
 .shape-2 {
     width: 200px;
     height: 200px;
-    background: var(--peachy);
+    background: var(--salmon-hover);
     top: 60%;
     right: -3%;
     animation-delay: -5s;
@@ -84,7 +90,7 @@ h1, h2, h3, .logo {
 .shape-3 {
     width: 150px;
     height: 150px;
-    background: var(--mint);
+    background: var(--melon);
     top: 30%;
     right: 10%;
     animation-delay: -10s;
@@ -93,7 +99,7 @@ h1, h2, h3, .logo {
 .shape-4 {
     width: 250px;
     height: 250px;
-    background: var(--lavender-deep);
+    background: var(--sagefoam);
     bottom: 10%;
     left: 20%;
     animation-delay: -15s;
@@ -102,7 +108,7 @@ h1, h2, h3, .logo {
 .shape-5 {
     width: 300px;
     height: 300px;
-    background: var(--peachy);
+    background: var(--salmon);
     bottom: 50%;
     left: 50%;
     animation-delay: -5s;
@@ -156,42 +162,6 @@ nav.scrolled {
     opacity: 0.8;
 }
 
-.logo-blob {
-    width: 40px;
-    height: 40px;
-    background: linear-gradient(135deg, var(--peachy) 0%, var(--coral) 100%);
-    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-    position: relative;
-    animation: blobPulse 3s ease-in-out infinite;
-}
-
-.logo-blob::before,
-.logo-blob::after {
-    content: '';
-    position: absolute;
-    background: var(--text-dark);
-    border-radius: 50%;
-}
-
-.logo-blob::before {
-    width: 6px;
-    height: 8px;
-    top: 35%;
-    left: 25%;
-}
-
-.logo-blob::after {
-    width: 6px;
-    height: 8px;
-    top: 35%;
-    right: 25%;
-}
-
-@keyframes blobPulse {
-    0%, 100% { transform: scale(1); }
-    50% { transform: scale(1.05); }
-}
-
 .nav-links {
     display: flex;
     gap: 40px;
@@ -208,12 +178,12 @@ nav.scrolled {
 }
 
 .nav-links a:hover {
-    color: var(--coral);
-    background: rgba(255, 155, 155, 0.15);
+    color: var(--rust);
+    background: var(--salmon);
 }
 
 .nav-cta {
-    background: var(--coral);
+    background: var(--salmon);
     color: var(--white);
     padding: 12px 28px;
     border-radius: 50px;
@@ -224,7 +194,7 @@ nav.scrolled {
 }
 
 .nav-cta:hover {
-    background: var(--coral-hover);
+    background: var(--salmon-hover);
     transform: translateY(-2px);
     box-shadow: 0 8px 25px rgba(255, 155, 155, 0.5);
 }
@@ -256,7 +226,7 @@ nav.scrolled {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: #FFDBDB;
+    background: #FFDBaDB;
     padding: 8px 20px;
     border-radius: 50px;
     font-size: 0.9rem;
@@ -277,7 +247,7 @@ nav.scrolled {
 }
 
 .hero h1 span {
-    background: linear-gradient(135deg, var(--coral) 0%, var(--sage) 100%);
+    background: linear-gradient(135deg, var(--salmon) 0%, var(--sage) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -312,13 +282,13 @@ nav.scrolled {
 }
 
 .btn-primary {
-    background: var(--coral);
+    background: var(--salmon);
     color: var(--white);
     box-shadow: 0 8px 30px rgba(255, 155, 155, 0.4);
 }
 
 .btn-primary:hover {
-    background: var(--coral-hover);
+    background: var(--salmon-hover);
     transform: translateY(-3px) scale(1.02);
     box-shadow: 0 12px 35px rgba(255, 155, 155, 0.5);
 }
@@ -330,12 +300,12 @@ nav.scrolled {
 .btn-secondary {
     background: var(--white);
     color: var(--text-dark);
-    border: 2px solid var(--lavender-deep);
+    border: 2px solid var(--sagefoam);
 }
 
 .btn-secondary:hover {
-    background: var(--lavender);
-    border-color: var(--lavender);
+    background: var(--sagefoam);
+    border-color: var(--sagefoam);
     transform: translateY(-3px);
 }
 
@@ -347,375 +317,6 @@ nav.scrolled {
     animation: fadeInRight 1s ease;
 }
 
-/* Mascot - Mochi the Blob */
-.mochi {
-    position: absolute;
-    z-index: 10;
-}
-
-.mochi-main {
-    top: 20px;
-    right: 20px;
-    animation: mochiFloat 4s ease-in-out infinite;
-}
-
-.mochi-body {
-    width: 120px;
-    height: 100px;
-    background: linear-gradient(180deg, #FFE5E5 0%, #FFCECE 50%, #FFB8B8 100%);
-    border-radius: 50% 50% 45% 45% / 60% 60% 40% 40%;
-    position: relative;
-    box-shadow: 
-        inset -10px -10px 20px rgba(255, 155, 155, 0.3),
-        0 20px 40px rgba(255, 155, 155, 0.3);
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-.mochi-body:hover {
-    transform: scale(1.1) rotate(5deg);
-}
-
-.mochi-face {
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 20px;
-}
-
-.mochi-eye {
-    width: 12px;
-    height: 16px;
-    background: var(--text-dark);
-    border-radius: 50%;
-    position: relative;
-    animation: blink 4s ease-in-out infinite;
-}
-
-.mochi-eye::after {
-    content: '';
-    position: absolute;
-    width: 5px;
-    height: 5px;
-    background: white;
-    border-radius: 50%;
-    top: 3px;
-    left: 2px;
-}
-
-@keyframes blink {
-    0%, 45%, 55%, 100% { transform: scaleY(1); }
-    50% { transform: scaleY(0.1); }
-}
-
-.mochi-blush {
-    position: absolute;
-    width: 25px;
-    height: 12px;
-    background: rgba(255, 155, 155, 0.6);
-    border-radius: 50%;
-    top: 55%;
-}
-
-.mochi-blush.left {
-    left: 15%;
-}
-
-.mochi-blush.right {
-    right: 15%;
-}
-
-.mochi-mouth {
-    position: absolute;
-    top: 65%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 15px;
-    height: 8px;
-    border: 3px solid var(--text-dark);
-    border-top: none;
-    border-radius: 0 0 15px 15px;
-}
-
-.mochi-sparkle {
-    position: absolute;
-    font-size: 1.5rem;
-    animation: sparkleFloat 2s ease-in-out infinite;
-}
-
-.mochi-sparkle:nth-child(1) {
-    top: -20px;
-    left: -10px;
-    animation-delay: 0s;
-}
-
-.mochi-sparkle:nth-child(2) {
-    top: 10px;
-    right: -20px;
-    animation-delay: 0.5s;
-}
-
-.mochi-sparkle:nth-child(3) {
-    bottom: 20px;
-    left: -25px;
-    animation-delay: 1s;
-}
-
-@keyframes sparkleFloat {
-    0%, 100% { opacity: 1; transform: scale(1) rotate(0deg); }
-    50% { opacity: 0.6; transform: scale(0.8) rotate(180deg); }
-}
-
-@keyframes mochiFloat {
-    0%, 100% { transform: translateY(0) rotate(-5deg); }
-    50% { transform: translateY(-20px) rotate(5deg); }
-}
-
-/* Phone Mockup */
-.phone-mockup {
-    width: 360px;
-    height: 720px;
-    background: linear-gradient(180deg, #FFFFFF 0%, #F8F5FF 100%);
-    border-radius: 45px;
-    padding: 12px;
-    box-shadow: 
-        0 50px 100px rgba(93, 84, 117, 0.2),
-        0 20px 50px rgba(93, 84, 117, 0.1),
-        inset 0 0 0 2px rgba(255, 255, 255, 0.5);
-    position: relative;
-}
-
-.phone-screen {
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(180deg, var(--lavender) 0%, var(--peachy) 100%);
-    border-radius: 35px;
-    overflow: hidden;
-    position: relative;
-}
-
-.phone-content {
-    padding: 30px 25px 25px;
-    text-align: center;
-}
-
-.phone-clock-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    margin-bottom: 8px;
-}
-
-.phone-clock {
-    font-family: 'Comfortaa', cursive;
-    font-weight: 700;
-    color: var(--text-dark);
-    letter-spacing: 1px;
-    display: flex;
-    align-items: baseline;
-}
-
-.clock-time {
-    font-size: 2.2rem;
-    min-width: 100px;
-    text-align: center;
-}
-
-.clock-seconds {
-    font-size: 1.1rem;
-    opacity: 0.6;
-    min-width: 35px;
-    text-align: left;
-}
-
-.clock-ampm {
-    font-size: 0.9rem;
-    margin-left: 4px;
-    opacity: 0.7;
-    min-width: 28px;
-}
-
-.clock-toggle {
-    background: var(--white);
-    border: none;
-    padding: 4px 10px;
-    border-radius: 20px;
-    font-family: 'Nunito', sans-serif;
-    font-size: 0.7rem;
-    font-weight: 700;
-    color: var(--text-light);
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-.clock-toggle:hover {
-    background: var(--coral);
-    color: var(--white);
-}
-
-.phone-greeting {
-    font-family: 'Comfortaa', cursive;
-    font-size: 1.4rem;
-    color: var(--text-dark);
-    margin-bottom: 10px;
-}
-
-.phone-mood-label {
-    font-size: 0.9rem;
-    color: var(--text-light);
-    margin-bottom: 20px;
-}
-
-.phone-moods {
-    display: flex;
-    justify-content: center;
-    gap: 12px;
-    margin-bottom: 30px;
-    flex-wrap: wrap;
-}
-
-.mood-btn {
-    width: 50px;
-    height: 50px;
-    min-width: 50px;
-    min-height: 50px;
-    aspect-ratio: 1;
-    background: var(--white);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-    box-shadow: 0 5px 15px rgba(93, 84, 117, 0.1);
-    transition: all 0.3s ease;
-    cursor: pointer;
-    flex-shrink: 0;
-}
-
-.mood-btn:hover {
-    transform: scale(1.15);
-}
-
-.mood-btn.active {
-    background: var(--coral);
-    transform: scale(1.1);
-    box-shadow: 0 8px 25px rgba(255, 155, 155, 0.4);
-}
-
-.phone-card {
-    background: var(--white);
-    border-radius: 25px;
-    padding: 20px;
-    text-align: left;
-    box-shadow: 0 10px 30px rgba(93, 84, 117, 0.1);
-}
-
-.phone-card-title {
-    font-family: 'Comfortaa', cursive;
-    font-size: 1rem;
-    color: var(--text-dark);
-    margin-bottom: 15px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.breathing-circle {
-    width: 80px;
-    height: 80px;
-    background: linear-gradient(135deg, var(--mint) 0%, var(--mint-deep) 100%);
-    border-radius: 50%;
-    margin: 0 auto;
-    animation: breathe 4s ease-in-out infinite;
-}
-
-@keyframes breathe {
-    0%, 100% { transform: scale(0.8); opacity: 0.7; }
-    50% { transform: scale(1.2); opacity: 1; }
-}
-
-.phone-nav {
-    position: absolute;
-    bottom: 20px;
-    left: 25px;
-    right: 25px;
-    background: var(--white);
-    border-radius: 25px;
-    padding: 15px 25px;
-    display: flex;
-    justify-content: space-around;
-    box-shadow: 0 -5px 20px rgba(93, 84, 117, 0.1);
-}
-
-.phone-nav-item {
-    font-size: 1.3rem;
-    opacity: 0.5;
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-
-.phone-nav-item.active {
-    opacity: 1;
-    transform: scale(1.1);
-}
-
-/* Floating elements around phone */
-.float-element {
-    position: absolute;
-    animation: floatElement 6s ease-in-out infinite;
-}
-
-.float-heart {
-    top: 20%;
-    left: -40px;
-    font-size: 2rem;
-    animation-delay: 0s;
-}
-
-.float-star {
-    top: 40%;
-    right: -50px;
-    font-size: 2.5rem;
-    animation-delay: -2s;
-}
-
-.float-cloud {
-    bottom: 30%;
-    left: -60px;
-    font-size: 2rem;
-    animation-delay: -4s;
-}
-
-@keyframes floatElement {
-    0%, 100% { transform: translateY(0) rotate(0deg); }
-    50% { transform: translateY(-15px) rotate(10deg); }
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(40px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes fadeInRight {
-    from {
-        opacity: 0;
-        transform: translateX(40px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
 
 /* Features Section */
 .features {
@@ -744,12 +345,12 @@ nav.scrolled {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: var(--mint);
+    background: var(--melon);
     padding: 8px 20px;
     border-radius: 50px;
     font-size: 0.9rem;
     font-weight: 600;
-    color: #5BA88B;
+    color: var(--salmon);
     margin-bottom: 20px;
 }
 
@@ -818,7 +419,7 @@ nav.scrolled {
 
 .feature-image-inner {
     width: 100%;
-    height: 100%;
+    height: 100%;foam
     display: flex;
     align-items: center;
     justify-content: center;
@@ -826,7 +427,7 @@ nav.scrolled {
 }
 
 .feature-card:nth-child(1) .feature-image-inner {
-    background: linear-gradient(180deg, var(--peachy) 0%, #FFCECE 100%);
+    background: linear-gradient(180deg, var(--sagefoam) 0%, #FFCECE 100%);
 }
 
 .feature-card:nth-child(2) .feature-image-inner {
