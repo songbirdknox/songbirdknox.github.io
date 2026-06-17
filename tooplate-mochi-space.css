@@ -50,6 +50,45 @@ h1, h2, h3, .logo {
     font-family: 'Comfortaa', cursive;
 }
 
+
+.hero-layout {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-image {
+    flex-shrink: 0;
+}
+
+.hero-image img {
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 24px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+@media (max-width: 768px) {
+    .hero-layout {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image img {
+        width: 240px;
+        height: 240px;
+    }
+}
+
+
+
+
 /* Floating Background Shapes */
 .floating-shapes {
     position: fixed;
@@ -1065,7 +1104,7 @@ nav.scrolled {
 /* Download CTA */
 .download-cta {
     padding: 80px 30px;
-    background: linear-gradient(180deg, var(--peachy) 0%, var(--lavender) 100%);
+    background: linear-gradient(180deg, var(--matcha) 0%, var(--melon) 100%);
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -1242,7 +1281,7 @@ footer {
 }
 
 .footer-brand .logo-blob {
-    background: linear-gradient(135deg, var(--peachy) 0%, var(--coral) 100%);
+    background: linear-gradient(135deg, var(--salmon) 0%, var(--melon) 100%);
 }
 
 .footer-brand p {
@@ -1374,7 +1413,7 @@ footer {
 
 /* Active nav link */
 .nav-links a.active {
-    color: var(--coral);
+    color: var(--salmon);
     background: rgba(255, 155, 155, 0.2);
 }
 
@@ -1441,8 +1480,8 @@ footer {
 
 .mobile-menu-links a:hover,
 .mobile-menu-links a.active {
-    background: var(--lavender);
-    color: var(--coral);
+    background: var(--matcha);
+    color: var(--salmon);
 }
 
 .mobile-menu-cta {
