@@ -3,425 +3,590 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Songbird Psychotherapy</title>
+    <title>Songbird Psychotherapy | Caroline Biondo, LPC-MHSP — Knoxville, TN</title>
+    <meta name="description" content="Songbird Psychotherapy is the private practice of Caroline Biondo, LPC-MHSP, a Knoxville-based counselor specializing in eating disorders, mood and anxiety disorders, ADHD, and body image, using Acceptance and Commitment Therapy.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Comfortaa:wght@500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="tooplate-mochi-space.css">
-<!--
-
-Tooplate 2159 Mochi Space
-
-https://www.tooplate.com/view/2159-mochi-space
-
-Free HTML CSS Template
-
--->
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script>document.documentElement.className += " js";</script>
 </head>
 <body>
-    <!-- Floating Background Shapes -->
-    <div class="floating-shapes">
-        <div class="shape shape-1"></div>
-        <div class="shape shape-2"></div>
-        <div class="shape shape-3"></div>
-        <div class="shape shape-4"></div>
-        <div class="shape shape-5"></div>
-    </div>
 
-    <!-- Navigation -->
-    <nav id="navbar">
-        <div class="nav-container">
-            <a href="#" class="logo">
+    <!-- Reusable SVG symbols: a feather ornament + the songbird mark -->
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+        <symbol id="feather" viewBox="0 0 24 24">
+            <path d="M20.5 3.5c-3.8-.3-9.2.6-12.7 4.1C4.6 10.8 4 14.6 4 17.5c0 0 .4.4.9.5l8.2-8.2c.2-.2.5-.2.7 0 .2.2.2.5 0 .7L5.8 18.5c.5.4 1 .6 1.4.6 2.9 0 6.7-.6 9.9-3.8 3.5-3.5 4.4-8.9 4.1-12.7-.02-.6-.2-.8-.7-1.1z" fill="currentColor"/>
+        </symbol>
+        <symbol id="bird-mark" viewBox="0 0 32 32">
+            <path d="M27 8c-1.6 0-3 .9-3.8 2.2C21.7 8.3 19.2 7 16.3 7 11 7 7 11 7 16.3c0 .9.1 1.7.4 2.5-1.4.6-2.6 1.7-3.4 3.2-.3.6.3 1.2.9.9 1.4-.7 2.7-1 3.9-1 .2 1.7 1 3.2 2.2 4.3.5.4 1.2 0 1.1-.6-.1-.6-.1-1.1 0-1.6 1.9 1.4 4.4 2 7.1 1.5 4.8-.9 8.2-5.4 7.7-10.3 1.3-.6 2.2-1.9 2.2-3.4 0-2-1.6-3.5-3.5-3.5h-.5z" fill="currentColor"/>
+        </symbol>
+    </svg>
+
+    <!-- ===================== Navigation ===================== -->
+    <nav id="site-nav" aria-label="Primary">
+        <div class="nav-inner">
+            <a href="#top" class="brand">
+                <svg class="brand-mark" aria-hidden="true"><use href="#bird-mark"></use></svg>
                 Songbird Psychotherapy
             </a>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
-                <li><a href="#specialities">Specialties</a></li>
-                <li><a href="#preview">Insurance Taken</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#specialties">Specialties</a></li>
+                <li><a href="#approach">Approach</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#insurance">Insurance</a></li>
             </ul>
-            <a href="#download" class="nav-cta">Contact Me</a>
-            <div class="mobile-menu-btn" id="mobileMenuBtn">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+            <a href="#contact" class="nav-cta">Get in touch</a>
+            <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobilePanel">
+                <span></span><span></span><span></span>
+            </button>
         </div>
     </nav>
 
-    <!-- Mobile Menu Overlay -->
-    <div class="mobile-menu-overlay" id="mobileOverlay"></div>
-
-    <!-- Mobile Menu Panel -->
-    <div class="mobile-menu" id="mobileMenu">
-        <ul class="mobile-menu-links">
-            <li><a href="#about">Features</a></li>
-            <li><a href="#specialties">How It Works</a></li>
-            <li><a href="#preview">Preview</a></li>
-            <li><a href="#testimonials">Reviews</a></li>
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+    <aside class="mobile-panel" id="mobilePanel" aria-label="Mobile menu">
+        <ul class="mobile-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#specialties">Specialties</a></li>
+            <li><a href="#approach">Approach</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#insurance">Insurance</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-        <a href="#download" class="mobile-menu-cta">Download Free</a>
-    </div>
+        <a href="#contact" class="mobile-cta">Get in touch</a>
+    </aside>
 
-  
+    <main id="top">
 
-<!-- Hero Section -->
-<section class="hero">
-    <div class="hero-content hero-layout">
-
-        <div class="hero-text">
-            <h1>Caroline Biondo <span>LPC-MHSP</span><br>Knoxville, TN</h1>
-
-            <p>
-                Welcome to Songbird Psychotherapy!<br>
-                If you're reading this, you've found a counseling practice dedicated to helping every patient find their voice and take flight. I'm so glad you're here!
-            </p>
-
-            <div class="hero-buttons">
-                <a href="#download" class="btn btn-primary">
-                    Learn More
-                </a>
-                <a href="#preview" class="btn btn-secondary">
-                    Contact Me
-                </a>
-            </div>
-        </div>
-
-        <div class="hero-image">
-            <img src="songbird_site/PeaceBird.png"
-                 alt="">
-        </div>
-
-    </div>
-</section>
-
-
-              
-
-
-
-
-
-
-
-
-
-
->
-
-
-    <!-- Features Section -->
-    <section class="about" id="about">
-        <div class="section-header reveal">
-            <div class="section-badge">
-                Hope is the thing with feathers
-            </div>
-            <br><br>
-            <h2>About Songbird Psychotherapy</h2>
-
-            Songbird Psychotherapy is solely owned and operated by Caroline Biondo (that's
-            me!). I am a nationally certified and licensed professional counselor, and I
-            have 10+ years of experience serving patients across the state of Tennessee.
-            </p>
-            <br>
-            <p>
-            I have spent my career specializing in eating disorders, mood disorders,
-            adjustment and grief disorders, ADHD, and OCD. My primary treatment modality is
-            Acceptance and Commitment Therapy (ACT), and I borrow from CBT, DBT, and somatic
-            theories to create a balanced therapeutic experience for my patients.
-            Additionally, as an eating disorder specialist, I am a proud Health at Every
-            Size (HAES) clinician, and I incorporate the principles of Intuitive Eating
-            into my work with patients.
-            </p>
-            <br>
-            <p>
-            I am a proud neurodivergent therapist, as well as a
-            proud ally of the LGBTQIA+ community, and I strive to make my practice an
-            affirming and safe space for all brains and  bodies. 
-            </p>
-        </div>
-        <div class="about-grid">
-            <div class="feature-card reveal">
-                <div class="feature-image">
-                    <div class="feature-image-inner">
-                        <div class="feature-screenshot mood-screenshot">
-                            <div class="mood-screenshot-title">How do you feel?</div>
-                            <div class="mood-screenshot-emojis">
-                                <div class="mood-screenshot-emoji">😊</div>
-                                <div class="mood-screenshot-emoji selected">🥰</div>
-                                <div class="mood-screenshot-emoji">😌</div>
-                                <div class="mood-screenshot-emoji">😔</div>
-                            </div>
-                            <div class="mood-screenshot-chart">
-                                <div class="mood-bar" style="height: 60%;"></div>
-                                <div class="mood-bar" style="height: 80%;"></div>
-                                <div class="mood-bar" style="height: 45%;"></div>
-                                <div class="mood-bar" style="height: 90%;"></div>
-                                <div class="mood-bar" style="height: 70%;"></div>
-                                <div class="mood-bar" style="height: 85%;"></div>
-                                <div class="mood-bar" style="height: 95%;"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="feature-content">
-                    <h3><span></span> Mood Tracking</h3>
-                    <p>Log how you're feeling with cute emoji check-ins. Discover patterns over time and celebrate your emotional journey with beautiful insights.</p>
-                    <span class="feature-tag">✨ Weekly insights</span>
+    <!-- ===================== Hero ===================== -->
+    <section class="hero">
+        <div class="hero-inner">
+            <div class="hero-copy">
+                <span class="hero-eyebrow">
+                    <svg class="ornament" aria-hidden="true"><use href="#feather"></use></svg>
+                    Hope is the thing with feathers
+                </span>
+                <h1 class="hero-title">Caroline Biondo,<br><span class="accent">LPC-MHSP</span></h1>
+                <p class="hero-sub">Knoxville, Tennessee</p>
+                <p>
+                    Welcome to Songbird Psychotherapy. If you're reading this, you've found a
+                    counseling practice dedicated to helping every patient find their voice and
+                    take flight. I'm so glad you're here.
+                </p>
+                <div class="hero-actions">
+                    <a href="#about" class="btn btn--primary">Learn more</a>
+                    <a href="#contact" class="btn btn--ghost">Contact me</a>
                 </div>
             </div>
-            <div class="feature-card reveal">
-                <div class="feature-image">
-                    <div class="feature-image-inner">
-                        <div class="feature-screenshot breathing-screenshot">
-                            <div class="breathing-screenshot-text">Breathe in...</div>
-                            <div class="breathing-screenshot-circle"></div>
-                            <div class="breathing-screenshot-timer">4 : 7 : 8 technique</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="feature-content">
-                    <h3><span></span> Breathing Exercises</h3>
-                    <p>Calm your mind with guided breathing techniques. Watch Mochi breathe along with you in soothing, synchronized animations.</p>
-                    <span class="feature-tag">🧘 5+ techniques</span>
-                </div>
-            </div>
-            <div class="feature-card reveal">
-                <div class="feature-image">
-                    <div class="feature-image-inner">
-                        <div class="feature-screenshot journal-screenshot">
-                            <div class="journal-screenshot-header">
-                                <div class="journal-screenshot-date">Today</div>
-                                <div class="journal-screenshot-mood">🥰</div>
-                            </div>
-                            <div class="journal-screenshot-card">
-                                <div class="journal-screenshot-label">I'm grateful for...</div>
-                                <div class="journal-screenshot-line"></div>
-                                <div class="journal-screenshot-line"></div>
-                                <div class="journal-screenshot-line"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="feature-content">
-                    <h3><span></span> Gratitude Journal</h3>
-                    <p>Write down three good things each day. Build a treasure trove of happy memories to look back on whenever you need a smile.</p>
-                    <span class="feature-tag">📝 Daily prompts</span>
-                </div>
-            </div>
-            <div class="feature-card reveal">
-                <div class="feature-image">
-                    <div class="feature-image-inner">
-                        <div class="feature-screenshot sleep-screenshot">
-                            <div class="sleep-screenshot-icon">🌙</div>
-                            <div class="sleep-screenshot-title">Ocean Waves</div>
-                            <div class="sleep-screenshot-waves">
-                                <div class="sleep-wave"></div>
-                                <div class="sleep-wave"></div>
-                                <div class="sleep-wave"></div>
-                                <div class="sleep-wave"></div>
-                                <div class="sleep-wave"></div>
-                                <div class="sleep-wave"></div>
-                                <div class="sleep-wave"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="feature-content">
-                    <h3><span></span> Sleep Sounds</h3>
-                    <p>Drift off to dreamland with cozy soundscapes. Rain, waves, forest ambience, and more peaceful melodies to help you rest.</p>
-                    <span class="feature-tag">🎵 20+ sounds</span>
-                </div>
-            </div>
-            <div class="feature-card reveal">
-                <div class="feature-image">
-                    <div class="feature-image-inner">
-                        <div class="feature-screenshot affirmations-screenshot">
-                            <div class="affirmations-icon"></div>
-                            <div class="affirmations-card">
-                                <div class="affirmations-text">"You are worthy of love and kindness, especially from yourself."</div>
-                                <div class="affirmations-hearts">💕 💕 💕</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="feature-content">
-                    <h3><span></span> Daily Affirmations</h3>
-                    <p>Start each day with positive words from Mochi. Uplifting quotes and gentle reminders that you're doing amazing.</p>
-                    <span class="feature-tag">🌸 New daily</span>
-                </div>
-            </div>
-            <div class="feature-card reveal">
-                <div class="feature-image">
-                    <div class="feature-image-inner">
-                        <div class="feature-screenshot habits-screenshot">
-                            <div class="habits-title">Today's Habits</div>
-                            <div class="habits-list">
-                                <div class="habit-item">
-                                    <div class="habit-check done">✓</div>
-                                    <span>Drink water</span>
-                                    <span class="habit-streak">🔥 7 days</span>
-                                </div>
-                                <div class="habit-item">
-                                    <div class="habit-check done">✓</div>
-                                    <span>Morning stretch</span>
-                                    <span class="habit-streak">🔥 5 days</span>
-                                </div>
-                                <div class="habit-item">
-                                    <div class="habit-check pending">○</div>
-                                    <span>Read 10 mins</span>
-                                    <span class="habit-streak">🔥 3 days</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="feature-content">
-                    <h3><span>✅</span> Habit Tracker</h3>
-                    <p>Build healthy routines one check at a time. Track streaks, celebrate wins, and watch your progress bloom.</p>
-                    <span class="feature-tag">🏆 Streaks & rewards</span>
+
+            <div class="hero-art">
+                <div class="hero-panel">
+                    <!-- Songbird on a branch: the signature illustration -->
+                    <svg viewBox="0 0 400 360" role="img" aria-label="Illustration of a songbird perched on a leafy branch">
+                        <!-- branch -->
+                        <path d="M30 250 C 130 232, 250 244, 372 214" fill="none"
+                              stroke="#44685C" stroke-width="9" stroke-linecap="round"/>
+                        <!-- small twig + leaves -->
+                        <path d="M300 222 C 320 206, 340 200, 360 196" fill="none"
+                              stroke="#44685C" stroke-width="5" stroke-linecap="round"/>
+                        <path d="M338 200 q 14 -16 30 -14 q -4 18 -22 22 z" fill="#6E9384"/>
+                        <path d="M314 210 q 12 -16 28 -16 q -2 18 -20 24 z" fill="#7da293"/>
+                        <!-- drifting feathers -->
+                        <g class="hero-feather f1" fill="#C98B80" opacity="0.85">
+                            <path d="M96 300 c -10 -8 -10 -22 0 -34 c 9 8 9 26 0 34 z"/>
+                        </g>
+                        <g class="hero-feather f2" fill="#7da293" opacity="0.8">
+                            <path d="M330 286 c -9 -7 -9 -20 0 -31 c 8 7 8 24 0 31 z"/>
+                        </g>
+                        <g class="hero-feather f3" fill="#D9A86A" opacity="0.7">
+                            <path d="M150 318 c -8 -6 -8 -17 0 -27 c 7 6 7 21 0 27 z"/>
+                        </g>
+
+                        <!-- the bird -->
+                        <g class="hero-bird">
+                            <!-- tail -->
+                            <path d="M150 196 C 116 196, 92 178, 78 156 C 104 162, 132 168, 158 178 z" fill="#6E9384"/>
+                            <path d="M152 200 C 122 204, 98 196, 82 180 C 108 182, 134 184, 160 184 z" fill="#7da293"/>
+                            <!-- body -->
+                            <path d="M150 240 C 134 198, 156 162, 196 158 C 236 154, 262 178, 262 206
+                                     C 262 230, 240 250, 206 250 C 184 250, 162 250, 150 240 z" fill="#C98B80"/>
+                            <!-- belly highlight -->
+                            <path d="M176 244 C 166 222, 176 198, 200 196 C 196 218, 200 236, 214 248
+                                     C 200 250, 186 250, 176 244 z" fill="#f0c7bf"/>
+                            <!-- wing -->
+                            <path d="M196 196 C 224 188, 250 196, 258 214 C 244 224, 216 226, 198 218 z" fill="#b87a6f"/>
+                            <!-- head -->
+                            <circle cx="244" cy="178" r="30" fill="#C98B80"/>
+                            <!-- eye -->
+                            <circle cx="252" cy="172" r="4.4" fill="#33302B"/>
+                            <!-- beak -->
+                            <path d="M272 176 l 22 -5 l -20 14 z" fill="#D9A86A"/>
+                            <!-- legs -->
+                            <path d="M204 250 l 0 16 M222 250 l 2 16" stroke="#9b6a5f" stroke-width="3.5" stroke-linecap="round"/>
+                            <!-- two little song notes -->
+                            <g fill="#44685C" opacity="0.65">
+                                <circle cx="312" cy="150" r="4.5"/>
+                                <path d="M316 150 l 0 -18 l 8 4" stroke="#44685C" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+                                <circle cx="336" cy="128" r="3.5"/>
+                                <path d="M339 128 l 0 -14 l 6 3" stroke="#44685C" stroke-width="2" fill="none" stroke-linecap="round"/>
+                            </g>
+                        </g>
+                    </svg>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- How It Works -->
-    <section class="specialities" id="specialities">
-        <div class="section-header reveal">
-            <div class="section-badge">
-                <span>🎯</span> Super simple
+    <!-- ===================== About ===================== -->
+    <section class="section" id="about">
+        <div class="wrap about-grid">
+            <div class="reveal">
+                <!-- Replace this circle with a headshot:
+                     <img class="portrait-img" src="assets/headshot.jpg" alt="Caroline Biondo"> -->
+                <div class="portrait" role="img" aria-label="Photo placeholder for Caroline Biondo">
+                    <svg class="portrait-feather" aria-hidden="true"><use href="#bird-mark"></use></svg>
+                    <span class="portrait-monogram">CB</span>
+                    <span class="portrait-label">Add your headshot</span>
+                </div>
             </div>
-            <h2>Start feeling better in 3 easy steps</h2>
-            <p>No complicated setup. Just download, open, and let Mochi guide you to a calmer you.</p>
-        </div>
-        <div class="steps">
-            <div class="step reveal">
-                <div class="step-number">1</div>
-                <h3>Download & Meet Mochi</h3>
-                <p>Get the app for free and say hello to your new self-care buddy. Mochi is excited to meet you!</p>
-            </div>
-            <div class="step reveal">
-                <div class="step-number">2</div>
-                <h3>Check In Daily</h3>
-                <p>Spend just 2 minutes each day logging your mood and practicing a quick mindfulness exercise.</p>
-            </div>
-            <div class="step reveal">
-                <div class="step-number">3</div>
-                <h3>Watch Yourself Bloom</h3>
-                <p>Track your progress, unlock cute achievements, and see how small moments create big changes.</p>
-            </div>
-        </div>
-    </section>
-
-  
-   
-    <!-- Testimonials -->
-    <section class="testimonials" id="testimonials">
-        <div class="section-header reveal">
-            <div class="section-badge">
-                <span>💬</span> Love notes
-            </div>
-            <h2>What our community says</h2>
-            <p>Join thousands who've found their calm with Mochi Space.</p>
-        </div>
-        <div class="testimonials-grid">
-            <div class="testimonial-card reveal">
-                <div class="testimonial-avatar">👩‍🎨</div>
-                <p class="testimonial-text">"Mochi is the cutest thing ever! I look forward to my daily check-ins now. It's made mindfulness actually fun."</p>
-                <div class="testimonial-author">Sarah K.</div>
-                <div class="testimonial-role">Designer & Mom of 2</div>
-            </div>
-            <div class="testimonial-card reveal">
-                <div class="testimonial-avatar">👨‍💻</div>
-                <p class="testimonial-text">"As someone with anxiety, this app has been a game-changer. The breathing exercises help me calm down in minutes."</p>
-                <div class="testimonial-author">Marcus T.</div>
-                <div class="testimonial-role">Software Developer</div>
-            </div>
-            <div class="testimonial-card reveal">
-                <div class="testimonial-avatar">👩‍🎓</div>
-                <p class="testimonial-text">"I've tried so many wellness apps, but Mochi Space is the only one I've stuck with. It just feels like a warm hug!"</p>
-                <div class="testimonial-author">Emily R.</div>
-                <div class="testimonial-role">Graduate Student</div>
+            <div class="about-copy reveal">
+                <span class="eyebrow">
+                    <svg class="ornament" aria-hidden="true"><use href="#feather"></use></svg>
+                    Welcome
+                </span>
+                <h2 class="section-title">About Songbird Psychotherapy</h2>
+                <p>
+                    Songbird Psychotherapy is solely owned and operated by Caroline Biondo
+                    (that's me!). I am a nationally certified and licensed professional
+                    counselor, and I have 10+ years of experience serving patients across the
+                    state of Tennessee.
+                </p>
+                <p>
+                    I have spent my career specializing in eating disorders, mood disorders,
+                    adjustment and grief disorders, ADHD, and OCD. My primary treatment modality
+                    is <strong>Acceptance and Commitment Therapy (ACT)</strong>, and I borrow
+                    from CBT, DBT, and somatic theories to create a balanced therapeutic
+                    experience for my patients. As an eating disorder specialist, I am a proud
+                    Health at Every Size (HAES) clinician, and I incorporate the principles of
+                    Intuitive Eating into my work with patients.
+                </p>
+                <p>
+                    I am a proud neurodivergent therapist, as well as a proud ally of the
+                    LGBTQIA+ community, and I strive to make my practice an affirming and safe
+                    space for all brains and bodies.
+                </p>
+                <div class="about-tags">
+                    <span class="tag">Acceptance &amp; Commitment Therapy</span>
+                    <span class="tag">Health at Every Size</span>
+                    <span class="tag">Intuitive Eating</span>
+                    <span class="tag">Neurodivergent-affirming</span>
+                    <span class="tag">LGBTQIA+ affirming</span>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Download CTA -->
-    <section class="download-cta" id="download">
-        <div class="cta-content reveal">
-            <h2>Ready to Take Flight?</h2>
-            <p>Contact me!</p>
-            <div class="app-buttons">
-                <a href="#" class="app-btn">
-                    <span class="app-btn-icon">🍎</span>
-                    <div class="app-btn-text">
-                        <div class="app-btn-small">Download on the</div>
-                        <div class="app-btn-large">App Store</div>
+    <!-- ===================== Specialties ===================== -->
+    <section class="section section--sand" id="specialties">
+        <div class="wrap">
+            <div class="section-head center reveal">
+                <span class="eyebrow">
+                    <svg class="ornament" aria-hidden="true"><use href="#feather"></use></svg>
+                    Areas of focus
+                </span>
+                <h2 class="section-title">Specialties</h2>
+                <p class="lead">
+                    Alongside general mental health counseling, I bring focused experience to the
+                    following areas.
+                </p>
+            </div>
+            <div class="spec-grid">
+                <div class="spec-card reveal">
+                    <svg class="ornament" aria-hidden="true"><use href="#feather"></use></svg>
+                    <h3 class="spec-name">Eating Disorders</h3>
+                    <p class="spec-list">Anorexia Nervosa &middot; Bulimia Nervosa &middot; Binge Eating Disorder &middot; ARFID &middot; OSFED</p>
+                </div>
+                <div class="spec-card reveal">
+                    <svg class="ornament" aria-hidden="true"><use href="#feather"></use></svg>
+                    <h3 class="spec-name">Mood Disorders</h3>
+                    <p class="spec-list">Major Depressive Disorder &middot; Persistent Depressive Disorder &middot; Bipolar I / II</p>
+                </div>
+                <div class="spec-card reveal">
+                    <svg class="ornament" aria-hidden="true"><use href="#feather"></use></svg>
+                    <h3 class="spec-name">Anxiety Disorders</h3>
+                    <p class="spec-list">Generalized Anxiety Disorder &middot; Panic Disorder &middot; Obsessive-Compulsive Disorder</p>
+                </div>
+                <div class="spec-card reveal">
+                    <svg class="ornament" aria-hidden="true"><use href="#feather"></use></svg>
+                    <h3 class="spec-name">Adjustment Disorders</h3>
+                    <p class="spec-list">Major life transitions &middot; grief and loss &middot; identity development &middot; relationship difficulties</p>
+                </div>
+                <div class="spec-card reveal">
+                    <svg class="ornament" aria-hidden="true"><use href="#feather"></use></svg>
+                    <h3 class="spec-name">ADHD</h3>
+                    <p class="spec-list">Inattentive, Hyperactive / Impulsive, and Combined types</p>
+                </div>
+                <div class="spec-card reveal">
+                    <svg class="ornament" aria-hidden="true"><use href="#feather"></use></svg>
+                    <h3 class="spec-name">Self-Esteem &amp; Body Image</h3>
+                    <p class="spec-list">Disturbances in self-perception</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== Approach ===================== -->
+    <section class="section" id="approach">
+        <div class="wrap">
+            <div class="approach-intro reveal">
+                <span class="eyebrow" style="justify-content:center;">
+                    <svg class="ornament" aria-hidden="true"><use href="#feather"></use></svg>
+                    My philosophy
+                </span>
+                <h2 class="section-title">My approach</h2>
+                <p>
+                    My work is rooted in the belief that you already hold the values and strengths
+                    you need to build a meaningful life. My role is to help you translate those
+                    values into healthy, workable change &mdash; with cognitive flexibility,
+                    mindfulness, and self-compassion as steady companions along the way.
+                </p>
+            </div>
+            <div class="principle-grid">
+                <div class="principle reveal">
+                    <div class="principle-icon">
+                        <svg aria-hidden="true"><use href="#feather"></use></svg>
                     </div>
-                </a>
-                <a href="#" class="app-btn">
-                    <span class="app-btn-icon">🤖</span>
-                    <div class="app-btn-text">
-                        <div class="app-btn-small">Get it on</div>
-                        <div class="app-btn-large">Google Play</div>
+                    <div>
+                        <h3>Acceptance &amp; Commitment Therapy</h3>
+                        <p>
+                            ACT is my primary modality, drawing on CBT, DBT, and somatic theories to
+                            create a balanced therapeutic experience tailored to you.
+                        </p>
                     </div>
-                </a>
+                </div>
+                <div class="principle reveal">
+                    <div class="principle-icon">
+                        <svg aria-hidden="true"><use href="#feather"></use></svg>
+                    </div>
+                    <div>
+                        <h3>Health at Every Size &amp; Intuitive Eating</h3>
+                        <p>
+                            As an eating disorder specialist, I am a proud HAES clinician and weave
+                            the principles of Intuitive Eating into our work together.
+                        </p>
+                    </div>
+                </div>
+                <div class="principle reveal">
+                    <div class="principle-icon">
+                        <svg aria-hidden="true"><use href="#feather"></use></svg>
+                    </div>
+                    <div>
+                        <h3>Affirming for all brains &amp; bodies</h3>
+                        <p>
+                            As a neurodivergent therapist and a proud ally of the LGBTQIA+ community,
+                            I work to keep this practice a safe, affirming space for everyone.
+                        </p>
+                    </div>
+                </div>
+                <div class="principle reveal">
+                    <div class="principle-icon">
+                        <svg aria-hidden="true"><use href="#feather"></use></svg>
+                    </div>
+                    <div>
+                        <h3>Values-driven &amp; strengths-based</h3>
+                        <p>
+                            Together we build the skills and the courage to move toward what matters
+                            most to you &mdash; not just relief from symptoms, but room for joy.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-wrapper">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <a href="#" class="logo">
-                        <div class="logo-blob"></div>
+    <!-- ===================== Experience / Credentials ===================== -->
+    <section class="section section--sand" id="experience">
+        <div class="wrap">
+            <div class="section-head center reveal">
+                <span class="eyebrow" style="justify-content:center;">
+                    <svg class="ornament" aria-hidden="true"><use href="#feather"></use></svg>
+                    Background
+                </span>
+                <h2 class="section-title">Experience &amp; credentials</h2>
+                <p class="lead">A few selected highlights from my professional journey.</p>
+            </div>
+
+            <div class="exp-wrap">
+                <!-- LEFT column -->
+                <div>
+                    <div class="exp-block reveal">
+                        <h3>Education</h3>
+                        <div class="entry">
+                            <div class="entry-role">M.S., Clinical Mental Health Counseling</div>
+                            <div class="entry-org">University of Tennessee, Knoxville</div>
+                            <div class="entry-dates">2015 &ndash; 2017</div>
+                            <ul class="entry-list">
+                                <li>CACREP-accredited Clinical Mental Health Counseling program.</li>
+                                <li>Completed 1,100+ clinical hours in one year across two concurrent internship placements.</li>
+                                <li>Repeat recipient of the Volunteer Service Award from the Center for Leadership and Service.</li>
+                                <li>Member, Chi Sigma Iota International Counseling Honor Society.</li>
+                            </ul>
+                        </div>
+                        <div class="entry">
+                            <div class="entry-role">B.A., Psychology &mdash; Minor in Spanish</div>
+                            <div class="entry-org">University of Tennessee, Knoxville</div>
+                            <div class="entry-dates">2011 &ndash; 2015</div>
+                            <ul class="entry-list">
+                                <li>Graduated Cum Laude.</li>
+                                <li>Recipient of the Volunteer Service Award.</li>
+                                <li>Member and Vice President, Psi Chi International Honor Society in Psychology.</li>
+                                <li>Member, VP of Membership, and Social Chair, Sigma Alpha Iota.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="exp-block reveal">
+                        <h3>Credentials</h3>
+                        <div class="creds">
+                            <div class="cred">
+                                <div class="cred-label">Licensed Professional Counselor &mdash; Mental Health Service Provider</div>
+                                <div class="cred-sub">Tennessee Board for Professional Counselors</div>
+                                <div class="cred-num">License #4923</div>
+                            </div>
+                            <div class="cred">
+                                <div class="cred-label">National Certified Counselor</div>
+                                <div class="cred-sub">National Board for Certified Counselors</div>
+                                <div class="cred-num">#900972</div>
+                            </div>
+                            <div class="cred">
+                                <div class="cred-label">National Provider Identifier</div>
+                                <div class="cred-sub">NPI</div>
+                                <div class="cred-num">#1487338919</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RIGHT column -->
+                <div>
+                    <div class="exp-block reveal">
+                        <h3>Professional Experience</h3>
+                        <div class="entry">
+                            <div class="entry-role">Licensed Clinician</div>
+                            <div class="entry-org">Knoxville Mindful Wellness Center &middot; Knoxville, TN</div>
+                            <div class="entry-dates">2023 &ndash; Present</div>
+                            <ul class="entry-list">
+                                <li>Provide clinical counseling grounded in evidence-based and mindfulness-based treatment strategies.</li>
+                                <li>Offer community psychoeducation and advocacy to local health agencies, schools, universities, and conferences.</li>
+                            </ul>
+                        </div>
+                        <div class="entry">
+                            <div class="entry-role">Program Therapist &amp; Director of Alumni Programming</div>
+                            <div class="entry-org">Focus Integrative Centers &middot; Knoxville, TN</div>
+                            <div class="entry-dates">2017 &ndash; 2023</div>
+                            <ul class="entry-list">
+                                <li>Led clinical assessment and documentation for the eating disorder IOP: intakes, biopsychosocial evaluations, master treatment plans, and discharge summaries.</li>
+                                <li>Facilitated weekly skills, process, creative-intervention, and mindful-movement groups.</li>
+                                <li>Built and ran a thriving alumni program, including monthly aftercare groups and recovery-resource support.</li>
+                                <li>Delivered community outreach and presentations on eating disorders and treatment resources.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="exp-block reveal">
+                        <h3>Selected Professional Activities</h3>
+                        <div class="entry">
+                            <div class="entry-role">Presenter &mdash; "Starvation at Large: Treating Anorexia Nervosa in Clients in Larger Bodies"</div>
+                            <div class="entry-org">Renfrew Foundation Annual Conference</div>
+                            <div class="entry-dates">November 2025</div>
+                        </div>
+                        <div class="entry">
+                            <div class="entry-role">Workshop Presenter &mdash; "Eating Disorders 101: Core Skills and Competencies for Clinicians"</div>
+                            <div class="entry-org">TLPCA Annual Conference</div>
+                            <div class="entry-dates">June 2025</div>
+                        </div>
+                        <div class="entry">
+                            <div class="entry-role">Guest Lecturer &mdash; Abnormal Psychology, "Eating Disorders"</div>
+                            <div class="entry-org">University of Tennessee</div>
+                            <div class="entry-dates">2023 &ndash; 2025</div>
+                        </div>
+                    </div>
+
+                    <a href="assets/CV_2025.pdf" class="btn btn--ghost cv-link">Download my full CV (PDF)</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== Insurance & Fees ===================== -->
+    <section class="section" id="insurance">
+        <div class="wrap">
+            <div class="section-head center reveal">
+                <span class="eyebrow" style="justify-content:center;">
+                    <svg class="ornament" aria-hidden="true"><use href="#feather"></use></svg>
+                    Getting started
+                </span>
+                <h2 class="section-title">Insurance &amp; fees</h2>
+                <p class="lead">A quick overview of what to expect. Reach out anytime with questions about coverage.</p>
+            </div>
+            <div class="info-grid">
+                <div class="info-col reveal">
+                    <h3>Insurance</h3>
+                    <p>I am currently in-network with:</p>
+                    <ul>
+                        <li><span class="placeholder">[ Add insurance plan ]</span></li>
+                        <li><span class="placeholder">[ Add insurance plan ]</span></li>
+                        <li><span class="placeholder">[ Add insurance plan ]</span></li>
+                    </ul>
+                    <p>If your plan isn't listed, I'm happy to provide a monthly superbill you can submit for possible out-of-network reimbursement.</p>
+                </div>
+                <div class="info-col reveal">
+                    <h3>Fees &amp; sessions</h3>
+                    <ul>
+                        <li>Initial intake (60 min) &mdash; <span class="placeholder">[ $ amount ]</span></li>
+                        <li>Individual session (50 min) &mdash; <span class="placeholder">[ $ amount ]</span></li>
+                        <li>Sliding-scale spots &mdash; <span class="placeholder">[ availability ]</span></li>
+                    </ul>
+                    <p>Payment is due at the time of service. A Good Faith Estimate is available on request under the No Surprises Act.</p>
+                </div>
+            </div>
+            <p class="note">Not sure where to start? Send a note and we'll figure out the right fit together.</p>
+        </div>
+    </section>
+
+    <!-- ===================== Contact ===================== -->
+    <section class="section section--sand" id="contact">
+        <div class="wrap contact-grid">
+            <div class="contact-details reveal">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    </div>
+                    <div class="contact-text">
+                        <div class="label">Phone</div>
+                        <div class="value"><a href="tel:+18654070071">(865) 407-0071</a></div>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg>
+                    </div>
+                    <div class="contact-text">
+                        <div class="label">Email</div>
+                        <div class="value placeholder">[ your Songbird email ]</div>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    </div>
+                    <div class="contact-text">
+                        <div class="label">Office</div>
+                        <div class="value placeholder">[ Songbird office address ]</div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-aside reveal">
+                <span class="eyebrow">
+                    <svg class="ornament" aria-hidden="true"><use href="#feather"></use></svg>
+                    Let's talk
+                </span>
+                <h2 class="section-title">Reach out</h2>
+                <p>
+                    Taking the first step can be the hardest part. Whenever you're ready, send a
+                    message and I'll get back to you to talk through whether we're a good fit.
+                </p>
+                <a href="mailto:hello@example.com?subject=Inquiry%20%E2%80%94%20Songbird%20Psychotherapy" class="btn btn--primary">Email me</a>
+                <p class="credline">Caroline Biondo, LPC-MHSP &middot; NCC &middot; Licensed in Tennessee (#4923)</p>
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+    <!-- ===================== Footer ===================== -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-top">
+                <div>
+                    <a href="#top" class="footer-brand">
+                        <svg class="brand-mark" aria-hidden="true"><use href="#bird-mark"></use></svg>
                         Songbird Psychotherapy
                     </a>
-                    <p>Healing for all feathered things.</p>
-                    <div class="footer-social">
-                        <a href="#" class="social-icon">📸</a>
-                        <a href="#" class="social-icon">🐦</a>
-                        <a href="#" class="social-icon">📘</a>
-                        <a href="#" class="social-icon">🎵</a>
-                    </div>
+                    <p class="footer-tag">"Hope is the thing with feathers." Healing for all feathered things.</p>
                 </div>
-                <div class="footer-column">
-                    <h4>Product</h4>
-                    <ul>
-                        <li><a href="#">Features</a></li>
-                        <li><a href="#">Pricing</a></li>
-                        <li><a href="#">Download</a></li>
-                        <li><a href="#">Updates</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Press Kit</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h4>Support</h4>
-                    <ul>
-                        <li><a href="#">Help Center</a></li>
-                        <li><a href="#">Community</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms of Service</a></li>
-                    </ul>
-                </div>
+                <ul class="footer-nav">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#specialties">Specialties</a></li>
+                    <li><a href="#approach">Approach</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#insurance">Insurance</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
             </div>
-            <div class="footer-bottom">
+            <div class="footer-legal">
                 <p>&copy; 2026 Songbird Psychotherapy, PLLC. All rights reserved.</p>
-                <p>Designed by <a href="https://www.tooplate.com" rel="nofollow" target="_blank">Tooplate</a></p>
+                <p>Caroline Biondo, LPC-MHSP &middot; Knoxville, TN</p>
             </div>
         </div>
     </footer>
 
-    <script src="tooplate-mochi-script.js"></script>
+    <!-- ===================== Behavior ===================== -->
+    <script>
+        // Nav: shadow on scroll
+        const nav = document.getElementById('site-nav');
+        const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 12);
+        onScroll();
+        window.addEventListener('scroll', onScroll, { passive: true });
+
+        // Mobile menu
+        const btn = document.getElementById('menuBtn');
+        const panel = document.getElementById('mobilePanel');
+        const overlay = document.getElementById('mobileOverlay');
+        const setMenu = (open) => {
+            btn.setAttribute('aria-expanded', String(open));
+            btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+            panel.classList.toggle('open', open);
+            overlay.classList.toggle('open', open);
+            document.body.style.overflow = open ? 'hidden' : '';
+        };
+        btn.addEventListener('click', () => setMenu(btn.getAttribute('aria-expanded') !== 'true'));
+        overlay.addEventListener('click', () => setMenu(false));
+        panel.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setMenu(false)));
+        document.addEventListener('keydown', e => { if (e.key === 'Escape') setMenu(false); });
+
+        // Scroll reveal (only if motion is welcome and supported)
+        const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        const reveals = document.querySelectorAll('.reveal');
+        if (!reduce && 'IntersectionObserver' in window) {
+            document.documentElement.classList.add('reveal-on');
+            const io = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        io.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+            reveals.forEach(el => io.observe(el));
+        }
+
+        // Active nav link highlight
+        const sections = document.querySelectorAll('main section[id]');
+        const linkFor = id => document.querySelector('.nav-links a[href="#' + id + '"]');
+        if ('IntersectionObserver' in window) {
+            const spy = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    const link = linkFor(entry.target.id);
+                    if (link && entry.isIntersecting) {
+                        document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+                        link.classList.add('active');
+                    }
+                });
+            }, { rootMargin: '-45% 0px -50% 0px' });
+            sections.forEach(s => spy.observe(s));
+        }
+    </script>
 </body>
 </html>
