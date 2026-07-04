@@ -377,12 +377,17 @@ a { color: var(--sage-deep); }
 
 /* Credential cards */
 .creds { display: grid; gap: 14px; }
-.cred { margin-bottom: 8px; }
+.cred { position: relative; padding-left: 22px; margin-bottom: 28px; }
+.cred::before {
+    content: ""; position: absolute; left: 0; top: 6px; bottom: 4px;
+    width: 3px; border-radius: 3px; background: var(--blush-tint);
+}
+.cred:hover::before { background: var(--blush); }
 .cred-label { font-weight: 700; color: var(--ink); font-size: 1.05rem; }
 .cred-sub { color: var(--muted); font-size: 0.9rem; margin-top: 2px; }
 .cred-num {
-    display: inline-block; margin-top: 10px; font-family: var(--font-display);
-    font-weight: 600; color: var(--sage-deep); font-size: 1.05rem; letter-spacing: 0.02em;
+    display: inline-block; margin-top: 0px;
+    font-weight: 600; color: var(--sage-deep); font-size: 1.00rem; letter-spacing: 0.02em;
 }
 .cv-link { margin-top: 30px; }
 
