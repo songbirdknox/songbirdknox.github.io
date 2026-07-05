@@ -13,13 +13,10 @@
 </head>
 <body>
 
-    <!-- Reusable SVG symbols: a feather ornament + the songbird mark -->
+    <!-- Reusable SVG symbols: a feather ornament -->
     <svg width="0" height="0" style="position:absolute" aria-hidden="true">
         <symbol id="feather" viewBox="0 0 24 24">
             <path d="M20.5 3.5c-3.8-.3-9.2.6-12.7 4.1C4.6 10.8 4 14.6 4 17.5c0 0 .4.4.9.5l8.2-8.2c.2-.2.5-.2.7 0 .2.2.2.5 0 .7L5.8 18.5c.5.4 1 .6 1.4.6 2.9 0 6.7-.6 9.9-3.8 3.5-3.5 4.4-8.9 4.1-12.7-.02-.6-.2-.8-.7-1.1z" fill="currentColor"/>
-        </symbol>
-        <symbol id="bird-mark" viewBox="0 0 32 32">
-            <path d="M27 8c-1.6 0-3 .9-3.8 2.2C21.7 8.3 19.2 7 16.3 7 11 7 7 11 7 16.3c0 .9.1 1.7.4 2.5-1.4.6-2.6 1.7-3.4 3.2-.3.6.3 1.2.9.9 1.4-.7 2.7-1 3.9-1 .2 1.7 1 3.2 2.2 4.3.5.4 1.2 0 1.1-.6-.1-.6-.1-1.1 0-1.6 1.9 1.4 4.4 2 7.1 1.5 4.8-.9 8.2-5.4 7.7-10.3 1.3-.6 2.2-1.9 2.2-3.4 0-2-1.6-3.5-3.5-3.5h-.5z" fill="currentColor"/>
         </symbol>
     </svg>
 
@@ -27,7 +24,7 @@
     <nav id="site-nav" aria-label="Primary">
         <div class="nav-inner">
             <a href="#top" class="brand">
-                <svg class="brand-mark" aria-hidden="true"><use href="#bird-mark"></use></svg>
+                <img class="portrait-img" src="assets/SP_small_logo.png" alt="Caroline Biondo", style="width: 50px;">
                 Songbird Psychotherapy
             </a>
             <ul class="nav-links">
@@ -81,59 +78,7 @@
             </div>
 
             <div class="hero-art">
-                <div class="hero-panel">
-                    <!-- Songbird on a branch: the signature illustration -->
-                    <svg viewBox="0 0 400 360" role="img" aria-label="Illustration of a songbird perched on a leafy branch">
-                        <!-- branch -->
-                        <path d="M30 250 C 130 232, 250 244, 372 214" fill="none"
-                              stroke="#44685C" stroke-width="9" stroke-linecap="round"/>
-                        <!-- small twig + leaves -->
-                        <path d="M300 222 C 320 206, 340 200, 360 196" fill="none"
-                              stroke="#44685C" stroke-width="5" stroke-linecap="round"/>
-                        <path d="M338 200 q 14 -16 30 -14 q -4 18 -22 22 z" fill="#6E9384"/>
-                        <path d="M314 210 q 12 -16 28 -16 q -2 18 -20 24 z" fill="#7da293"/>
-                        <!-- drifting feathers -->
-                        <g class="hero-feather f1" fill="#C98B80" opacity="0.85">
-                            <path d="M96 300 c -10 -8 -10 -22 0 -34 c 9 8 9 26 0 34 z"/>
-                        </g>
-                        <g class="hero-feather f2" fill="#7da293" opacity="0.8">
-                            <path d="M330 286 c -9 -7 -9 -20 0 -31 c 8 7 8 24 0 31 z"/>
-                        </g>
-                        <g class="hero-feather f3" fill="#D9A86A" opacity="0.7">
-                            <path d="M150 318 c -8 -6 -8 -17 0 -27 c 7 6 7 21 0 27 z"/>
-                        </g>
-
-                        <!-- the bird -->
-                        <g class="hero-bird">
-                            <!-- tail -->
-                            <path d="M150 196 C 116 196, 92 178, 78 156 C 104 162, 132 168, 158 178 z" fill="#6E9384"/>
-                            <path d="M152 200 C 122 204, 98 196, 82 180 C 108 182, 134 184, 160 184 z" fill="#7da293"/>
-                            <!-- body -->
-                            <path d="M150 240 C 134 198, 156 162, 196 158 C 236 154, 262 178, 262 206
-                                     C 262 230, 240 250, 206 250 C 184 250, 162 250, 150 240 z" fill="#C98B80"/>
-                            <!-- belly highlight -->
-                            <path d="M176 244 C 166 222, 176 198, 200 196 C 196 218, 200 236, 214 248
-                                     C 200 250, 186 250, 176 244 z" fill="#f0c7bf"/>
-                            <!-- wing -->
-                            <path d="M196 196 C 224 188, 250 196, 258 214 C 244 224, 216 226, 198 218 z" fill="#b87a6f"/>
-                            <!-- head -->
-                            <circle cx="244" cy="178" r="30" fill="#C98B80"/>
-                            <!-- eye -->
-                            <circle cx="252" cy="172" r="4.4" fill="#33302B"/>
-                            <!-- beak -->
-                            <path d="M272 176 l 22 -5 l -20 14 z" fill="#D9A86A"/>
-                            <!-- legs -->
-                            <path d="M204 250 l 0 16 M222 250 l 2 16" stroke="#9b6a5f" stroke-width="3.5" stroke-linecap="round"/>
-                            <!-- two little song notes -->
-                            <g fill="#44685C" opacity="0.65">
-                                <circle cx="312" cy="150" r="4.5"/>
-                                <path d="M316 150 l 0 -18 l 8 4" stroke="#44685C" stroke-width="2.4" fill="none" stroke-linecap="round"/>
-                                <circle cx="336" cy="128" r="3.5"/>
-                                <path d="M339 128 l 0 -14 l 6 3" stroke="#44685C" stroke-width="2" fill="none" stroke-linecap="round"/>
-                            </g>
-                        </g>
-                    </svg>
-                </div>
+                    <img class="img" src="assets/SP_logo2.png" alt="Caroline Biondo">
             </div>
         </div>
     </section>
@@ -470,7 +415,7 @@ To the untrained eyes and ears, it's easy to miss the thousands of songs and col
             <div class="footer-top">
                 <div>
                     <a href="#top" class="footer-brand">
-                        <svg class="brand-mark" aria-hidden="true"><use href="#bird-mark"></use></svg>
+                        <img class="portrait-img" src="assets/SP_logo_no_circle.png" alt="Caroline Biondo", style="width: 50px;">
                         Songbird Psychotherapy
                     </a>
                     <p class="footer-tag">"Hope is the thing with feathers."<br> Healing for all feathered things.</p>
